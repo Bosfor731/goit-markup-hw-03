@@ -11,6 +11,33 @@
   --second-accent-color: #188ce8;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
@@ -41,9 +68,50 @@ body {
 
 .header {
   background: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  /* border-bottom-width: 5px;
+  border-bottom-color: palevioletred; */
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-web-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.header-Studio-logo {
+  margin-right: 93px;
+  color: var(--second-btn-color);
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-link {
+  padding-top: 31px;
+  padding-bottom: 31px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -54,6 +122,16 @@ body {
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
+}
+
+.header-connect-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-connect-item {
+  display: flex;
+  align-items: center;
 }
 
 .header-mailto {
@@ -69,7 +147,9 @@ body {
   color: var(--accent-color);
 }
 
-.header-tel {
+.header-tel-link {
+  margin-left: 50px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -88,18 +168,23 @@ body {
   background-color: #2f303a;
 }
 
-.header-web-logo {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
+.hero-container {
+  display: flex;
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 200px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
-.header-Studio-logo {
-  color: var(--second-btn-color);
+.hero-container-btn {
+  display: flex;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-title {
@@ -112,6 +197,11 @@ body {
 }
 
 .hero-btn {
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  border: 0;
+
   cursor: pointer;
   background-color: var(--accent-color);
   font-weight: 700;
@@ -133,7 +223,22 @@ body {
   background-color: #e5e5e5;
 }
 
+.benefits-list {
+  display: flex;
+  padding-top: 94px;
+}
+
+.benefits-container {
+  display: flex;
+}
+
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .benefits-title {
+  padding-bottom: 10px;
+  width: 270px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
@@ -143,6 +248,7 @@ body {
 }
 
 .benefits-text {
+  padding-bottom: 94px;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -157,11 +263,36 @@ body {
 }
 
 .about-title {
+  width: 377px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+}
+
+.about-container {
+  text-align: center;
+}
+
+.about-list {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-item-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*--------------------------team-------------------*/
@@ -170,7 +301,17 @@ body {
   background-color: #f5f4fa;
 }
 
+.team-container {
+  text-align: center;
+}
+
 .team-title {
+  width: 265px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
@@ -178,7 +319,15 @@ body {
   color: #212121;
 }
 
+.team-list {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
 .team-item-title {
+  padding-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -194,10 +343,38 @@ body {
   color: var(--main-text-color);
 }
 
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-item-text {
+  padding-top: 10px;
+}
+
+.team-item-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.team-card-image {
+  display: block;
+  width: 270px;
+  height: 368px;
+  padding-bottom: 94px;
+  background-color: var(--main-title-color);
+}
+
 /*----------------------------footer------------------------------*/
 
 .footer {
   background-color: #2f303a;
+}
+
+.footer-container {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-web-logo {
@@ -212,6 +389,14 @@ body {
 
 .footer-Studio-logo {
   color: var(--main-title-color);
+}
+
+.footer-address {
+  padding-top: 20px;
+}
+
+.footer-item:not(:last-child) {
+  padding-bottom: 9px;
 }
 
 .footer-link {
@@ -230,7 +415,7 @@ body {
 
 .footer-mailto {
   font-style: normal;
-    font-weight: 400;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -262,9 +447,50 @@ body {
   background-color: #e5e5e5;
 }
 
+.studio-container {
+  display: block;
+}
+
+.studio-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 94px;
+  justify-content: center;
+}
+
+.studio-list-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.studio-item {
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.studio-item-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.studio-item-btn {
+  display: flex;
+}
+
+.studio-item-btn:not(:last-child) {
+  margin-right: 30px;
+}
+
 .studio-btn {
+  display: flex;
+  padding: 6px 22px 6px 22px;
+  border-style: none;
+
+  background-color: #f5f4fa;
   cursor: pointer;
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -278,7 +504,30 @@ body {
   background-color: var(--accent-color);
 }
 
+.studio-card-image {
+  display: block;
+  padding: 20px 24px 20px 24px;
+  border: 1px solid #ececec;
+  border-top: none;
+  background-color: var(--main-title-color);
+}
+
+.studio-item {
+  width: 370px;
+}
+
+/* .studio-item:nth-child(3n) {
+  padding-right: 0;
+  
+} */
+
+.studio-item:nth-child(n + 7) {
+  padding-bottom: 0;
+}
+
 .studio-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 1.87;
@@ -287,6 +536,8 @@ body {
 }
 
 .studio-text {
+  margin-bottom: 4px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
