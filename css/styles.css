@@ -64,7 +64,7 @@ body {
   margin: -1px;
 }
 
-/*-----------------------header-----------------------*/
+/* !------------------------------header---------------------------------*/
 
 .header {
   background: #ffffff;
@@ -76,7 +76,7 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  }
+}
 
 .header-navigation {
   display: flex;
@@ -160,7 +160,7 @@ body {
   color: var(--accent-color);
 }
 
-/*------------------------hero--=------------------*/
+/* !----------------------------hero-----------------------------------*/
 
 .hero {
   background-color: #2f303a;
@@ -173,7 +173,7 @@ body {
   width: 696px;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -215,17 +215,17 @@ body {
   background-color: var(--second-accent-color);
 }
 
-/*-----------------------benefits--------------------*/
+/* !-------------------------------benefits------------------------------------*/
 
 .benefits {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--main-btn-color)
+  background-color: var(--main-btn-color);
 }
 
 .benefits-list {
   display: flex;
- }
+}
 
 .benefits-container {
   display: flex;
@@ -236,7 +236,7 @@ body {
 }
 
 .benefits-title {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   width: 270px;
   font-weight: 700;
   font-size: 14px;
@@ -247,14 +247,14 @@ body {
 }
 
 .benefits-text {
-    font-weight: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
-/*-------------------------about---------------------*/
+/* !---------------------------------about-----------------------------------*/
 
 .about {
   padding-bottom: 94px;
@@ -281,7 +281,7 @@ body {
 
 .about-list {
   display: flex;
-  }
+}
 
 .about-item:not(:last-child) {
   margin-right: 30px;
@@ -293,7 +293,7 @@ body {
   height: auto;
 }
 
-/*--------------------------team-------------------*/
+/* !---------------------------------team-------------------------------------------*/
 
 .team {
   padding-top: 94px;
@@ -311,7 +311,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  
 
   font-weight: bold;
   font-size: 36px;
@@ -322,10 +321,10 @@ body {
 
 .team-list {
   display: flex;
-  }
+}
 
 .team-item-title {
-    font-weight: 500;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -359,10 +358,10 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   width: 270px;
-      background-color: var(--main-title-color);
+  background-color: var(--main-title-color);
 }
 
-/*----------------------------footer------------------------------*/
+/* !--------------------------footer------------------------------------------*/
 
 .footer {
   padding-top: 60px;
@@ -372,7 +371,6 @@ body {
 
 .footer-container {
   display: block;
-  
 }
 
 .footer-web-logo {
@@ -394,7 +392,7 @@ body {
 }
 
 .footer-item:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-link {
@@ -439,7 +437,7 @@ body {
   color: var(--accent-color);
 }
 
-/*------------------------studio------------------------*/
+/* !-----------------------studio------------------------------------------*/
 
 .studio {
   padding-top: 94px;
